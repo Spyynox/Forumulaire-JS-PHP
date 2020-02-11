@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire de Maxime</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="tp4.css">
+</head>
+<body>
+	<form action="tableau.php" method="POST" id="form" name="myformname"> 
+		<a href="tp4.js" id="tp4"></a>
+			<h1>Forumlaire</h1>
+				<fieldset id="fieldset1">
+			    	<legend>Qui es-tu?</legend>
+						Prénom:	 				 <input type="text" name="Prenom" class="prenom" id="prenom"><span id="span">Ton prénom n'est pas rempli</span>
+													 <label for="prenom"></label>	<br><br>
+
+						Nom: 					 <input type="text" name="Nom" class="nom" id="name"><span id="noms">Ton nom n'est pas rempli</span>
+													 <label for="name"></label>     <br><br>
+
+						Date de naissance: 		 <input type="date" name="Age" class="age" id="age">
+													 <label for="age"></label><span id="ages">Ta date de naissance n'est pas rempli</span>		<br><br>
+				                 
+						Sexe:	                 <input type="radio" name="sexe" value="Homme" id="homme">
+								                 	 <label for="homme">Homme</label> <br>
+								                 <input type="radio" name="sexe" value="Femme" id="femme">
+								                 	 <label for="femme">Femme</label> <br><br>
+								    
+								           		 <button type="button" name="button1" class="button1" id="button1">Suivant ></button>
+				</fieldset>
+
+
+				<fieldset id="fieldset2">
+			    	<legend>Que veux-tu?</legend>
+						E-mail:	 				 <input type="email" name="mail" class="mail" id="mail">
+													 <label for="mail"></label><span id="mails">Ton e-mail n'est pas rempli</span>	<br><br>
+
+						Mot de passe: 			 <input type="password" name="password" class="password" id="password"><span id="passwords">Ton mot de passe n'est pas rempli</span>
+													 <label for="password"></label>     <br><br>
+
+						Retapez le Mot de passe: <input type="password" name="repassword" class="repassword" id="repassword"><span id="repasswords">Ton mot de passe n'est pas rempli</span>
+													 <label for="repassword"></label>		<br><br>
+				                 
+						Adresse de blog:         <input type="url" name="adress" id="adress" placeholder="adresse du blog">
+								                 	 <label for="adress"></label><span id="adresso">Ton adresse de blog n'est pas rempli</span> <br><br>
+								    
+								           		 <button type="button" name="button2" class="button2" id="button2">< précédent</button>
+								           		 <button type="button" name="button3" class="button3" id="button3">Suivant></button>
+				</fieldset>
+
+
+				<fieldset id="fieldset3">
+			    	<legend>Ou vas-tu?</legend>
+						Bachelor:	 			 <input type="text" name="bachelor" class="bachelor" id="bachelor"><span id="bachelors">Ton bachelor n'est pas rempli</span>
+													 <label for="bachelor"></label><br><br>
+
+						Promotion: 				 <input type="text" name="promotion" class="promotion" id="promotion"><span id="promotions">Ta promotion doit remplir dev, design ou market</span>
+													 <label for="promotion"></label><br><br>
+				                 
+				                 					Quel est votre tome du voyageur galactique préféré?<br>
+								                 <input type="checkbox" name="tomes[]" value="Tomes1" id="Tomes1">
+								                 	 <label for="Tomes1">Le Guide du voyageur galactique</label> <br>
+								                 <input type="checkbox" name="tomes[]" value="Tomes2" id="Tomes2">
+								                 	 <label for="Tomes2">Le Dernier Restaurant avant la Fin du Monde</label> <br>
+								                 <input type="checkbox" name="tomes[]" value="Tomes3" id="Tomes3">
+								                 	 <label for="Tomes3">La Vie, l'Univers et le Reste</label> <br>
+								                 <input type="checkbox" name="tomes[]" value="Tomes4" id="Tomes4">
+								                 	 <label for="Tomes4">Salut, et encore merci pour le poisson</label> <br>	 	
+								                 <input type="checkbox" name="tomes[]" value="Tomes5" id="Tomes5">
+								                 	 <label for="Tomes5">Globalement inoffensive</label> <br><br>
+
+								                 	Un petit commentaire ?<br>
+					                             <textarea rows="5" cols="50" name="commentaire"><b>si ce texte s'affiche en gras, u lost the game</b></textarea><br><br>
+								    
+								           		 <button type="button" name="button4" class="button4" id="button4">< précédent</button>
+								           		 <input type="submit" name="submit" value="Inscription" id="submit"></button>
+				</fieldset>
+
+	</form>	
+
+	<ul id='errors'></ul>
+
+	<script type="text/javascript" src="tp4.js">
+	
+
+	
+
+	</script>
+
+</body>
+
+</html>

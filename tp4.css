@@ -1,0 +1,13 @@
+body {
+	background-image: url("https://srv.latostadora.com/designall.dll/incorporeo_transparente_negro--i:14138551754214138520;x:20;w:520;m:1.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% -20%;
+}
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
+.submit {
+	margin-left: 25%;
+}
